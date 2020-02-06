@@ -1,0 +1,5 @@
+[user]
+	name = username
+	email = user@mail.com
+[alias]
+	squash = ! message=$(git log --skip=1 --max-count=1 --pretty=%B) && git reset --soft HEAD~2 && git commit -m \"$message\"
