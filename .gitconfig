@@ -3,4 +3,4 @@
 	email = user@mail.com
 [alias]
 	squash = ! message=$(git log --skip=1 --max-count=1 --pretty=%B) && git reset --soft HEAD~2 && git commit -m \"$message\"
-	squash_push = ! git squash && git push  origin --force
+	squashpush = ! git squash && git push  origin --force
